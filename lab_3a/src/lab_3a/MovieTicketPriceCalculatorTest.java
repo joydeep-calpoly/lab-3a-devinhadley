@@ -52,7 +52,7 @@ public class MovieTicketPriceCalculatorTest {
     @Test
     public void testComputePriceMatineeChild() {
         int price = calculator.computePrice(LocalTime.of(11, 0), 10);
-        assertEquals(2400 - 300, price);  // Matinee price - child discount
+        assertEquals(2400 - 300, price);
     }
 
     @Test
@@ -126,5 +126,4 @@ public class MovieTicketPriceCalculatorTest {
         int discount = calculator.computeDiscount(65);
         assertEquals(400, discount);
     }
-
 }
